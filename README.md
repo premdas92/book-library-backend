@@ -4,8 +4,6 @@ This folder contains the **backend API** for the Book Library application. It pr
 
 ---
 
----
-
 ## ⚙️ Getting started
 
 1. **Install dependencies**  
