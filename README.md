@@ -4,22 +4,6 @@ This folder contains the **backend API** for the Book Library application. It pr
 
 ---
 
-## 📁 Project structure
-
-src/
-  config/
-    database.js          # MongoDB connection setup
-  controllers/
-    bookController.js    # Request handlers for book APIs
-  middlewares/
-  models/
-    book-model.js        # Book schema/model
-  routes/
-    book-router.js       # Book-related routes
-  app.js                 # Express app entry point
-.env                     # Environment variables (Mongo URI, etc.)
-
-
 ---
 
 ## ⚙️ Getting started
@@ -27,6 +11,7 @@ src/
 1. **Install dependencies**  
    ```bash
    npm install
+   ```
 
 2. Set up your MongoDB URI in a .env file at the root:
     MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/<dbname>
@@ -34,6 +19,7 @@ src/
 3. Start the server
     ```bash
     npm start
+    ```
 
 ## 📌 API endpoints
     All endpoints are prefixed with /api/book.
@@ -60,3 +46,8 @@ Content-Type: application/json
   "status": "read",
   "description": "A classic Spanish novel about chivalry."
 }
+```
+Search books
+```http
+ GET /api/book/search?q=quixote
+
