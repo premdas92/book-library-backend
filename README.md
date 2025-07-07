@@ -46,7 +46,7 @@ Content-Type: application/json
 }
 ```
 Search books
-```http
+```
  GET /api/book/search?q=quixote
 ```
 
