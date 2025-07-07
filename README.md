@@ -22,7 +22,6 @@ This folder contains the **backend API** for the Book Library application. It pr
     ```
 
 ## 📌 API endpoints
-    All endpoints are prefixed with /api/book.
     
 | Method | Endpoint                   | Description                                      |
 | ------ | -------------------------- | ------------------------------------------------ |
@@ -35,6 +34,7 @@ This folder contains the **backend API** for the Book Library application. It pr
 | DELETE | `/api/book/:id`            | Delete a book by its ID                          |
 
 ## 🔎 Example requests
+
 Create a book
 ```http
 POST /api/book
@@ -50,4 +50,9 @@ Content-Type: application/json
 Search books
 ```http
  GET /api/book/search?q=quixote
+```
 
+## 🛠️ Tech stack
+Backend: Node.js, Express.js
+
+Database: MongoDB (Mongoose)
