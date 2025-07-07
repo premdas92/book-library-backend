@@ -14,7 +14,7 @@ This folder contains the **backend API** for the Book Library application. It pr
 2. Set up your MongoDB URI in a .env file at the root:
     MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/<dbname>
 
-3. Start the server
+3. Start the server : The server will run on port 7777
     ```bash
     npm start
     ```
