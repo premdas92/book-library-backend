@@ -4,29 +4,12 @@ This folder contains the **backend API** for the Book Library application. It pr
 
 ---
 
-## 📁 Project structure
-
-src/
-  config/
-    database.js          # MongoDB connection setup
-  controllers/
-    bookController.js    # Request handlers for book APIs
-  middlewares/
-  models/
-    book-model.js        # Book schema/model
-  routes/
-    book-router.js       # Book-related routes
-  app.js                 # Express app entry point
-.env                     # Environment variables (Mongo URI, etc.)
-
-
----
-
 ## ⚙️ Getting started
 
 1. **Install dependencies**  
    ```bash
    npm install
+   ```
 
 2. **Set up your MongoDB URI in a .env file at the root:**
     MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/<dbname>
@@ -41,7 +24,6 @@ src/
    Visit the swagger docs on http://localhost:7777/api-docs/ to test the APIs
 
 ## 📌 API endpoints
-    All endpoints are prefixed with /api/book.
     
 | Method | Endpoint                   | Description                                      |
 | ------ | -------------------------- | ------------------------------------------------ |
@@ -54,6 +36,7 @@ src/
 | DELETE | `/api/book/:id`            | Delete a book by its ID                          |
 
 ## 🔎 Example requests
+
 Create a book
 ```http
 POST /api/book
@@ -65,3 +48,13 @@ Content-Type: application/json
   "status": "read",
   "description": "A classic Spanish novel about chivalry."
 }
+```
+Search books
+```
+ GET /api/book/search?q=quixote
+```
+
+## 🛠️ Tech stack
+Backend: Node.js, Express.js
+
+Database: MongoDB (Mongoose)
