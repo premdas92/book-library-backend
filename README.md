@@ -28,12 +28,17 @@ src/
    ```bash
    npm install
 
-2. Set up your MongoDB URI in a .env file at the root:
+2. **Set up your MongoDB URI in a .env file at the root:**
     MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/<dbname>
 
-3. Start the server
+3. **Start the server**
     ```bash
     npm start
+    ```
+    The server starts on port http://localhost:7777
+
+4. **Swagger doc**
+   Visit the swagger docs on http://localhost:7777/api-docs/ to test the APIs
 
 ## 📌 API endpoints
     All endpoints are prefixed with /api/book.
